@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true}));
 app.use(cors());
 
 // using cloud atlas version of mongodb
-const CONNECTION_URL="mongodb+srv://santoryuu:fVP230vQBAQo@cluster0.8dkil.mongodb.net/<dbname>?retryWrites=true&w=majority";
+const CONNECTION_URL="mongodb+srv://santoryuu:<password>@cluster0.8dkil.mongodb.net/<dbname>?retryWrites=true&w=majority";
 const PORT=process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: true})
