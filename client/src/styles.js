@@ -1,4 +1,4 @@
-import {makeStyles} from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles((theme) => ({
     appBar: {
@@ -8,16 +8,16 @@ export default makeStyles((theme) => ({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-      },
-      heading: {
+    },
+    heading: {
         color: 'rgba(170,51,51, 1)',
-      },
-      image: {
+    },
+    image: {
         marginLeft: '15px',
-      }, 
-      [theme.breakpoints.down('sm')]: {
+    },
+    [theme.breakpoints.down('sm')]: {
         mainContainer: {
-          flexDirection: 'column-reverse',
+            flexDirection: 'column-reverse',
         },
-      }
+    }
 }));
